@@ -1,0 +1,19 @@
+[project]
+name = "llm-benchmark"
+version = "0.1.0"
+description = "Benchmark OpenAI-compatible LLM endpoints across concurrency and input lengths"
+authors = [
+    { name = "Tan Chia Yan", email = "tchiayan@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+llm-benchmark = "llm_benchmark:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
